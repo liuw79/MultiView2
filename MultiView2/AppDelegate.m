@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SwitchViewController.h"
 
 @implementation AppDelegate
 
@@ -20,6 +21,16 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+    
+    //add
+    SwitchViewController *sw = [[SwitchViewController alloc] init];
+//    self.window.rootViewController = sw;
+    self.switcher = sw;
+    self.window.rootViewController = self.switcher;
+    
+    [sw release];
+    
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

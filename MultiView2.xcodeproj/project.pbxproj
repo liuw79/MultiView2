@@ -16,6 +16,11 @@
 		0127460E1661ED0D00850807 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0127460D1661ED0D00850807 /* Default.png */; };
 		012746101661ED0D00850807 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0127460F1661ED0D00850807 /* Default@2x.png */; };
 		012746121661ED0D00850807 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 012746111661ED0D00850807 /* Default-568h@2x.png */; };
+		0127461A1661ED4200850807 /* SwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 012746191661ED4200850807 /* SwitchViewController.m */; };
+		0127461D1661ED6A00850807 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0127461C1661ED6A00850807 /* FirstViewController.m */; };
+		012746201661ED7600850807 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0127461F1661ED7600850807 /* SecondViewController.m */; };
+		012746221661ED8F00850807 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 012746211661ED8F00850807 /* FirstView.xib */; };
+		012746241661ED9900850807 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 012746231661ED9900850807 /* SecondView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,14 @@
 		0127460D1661ED0D00850807 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		0127460F1661ED0D00850807 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		012746111661ED0D00850807 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		012746181661ED4200850807 /* SwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchViewController.h; sourceTree = "<group>"; };
+		012746191661ED4200850807 /* SwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchViewController.m; sourceTree = "<group>"; };
+		0127461B1661ED6A00850807 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		0127461C1661ED6A00850807 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		0127461E1661ED7600850807 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		0127461F1661ED7600850807 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		012746211661ED8F00850807 /* FirstView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstView.xib; sourceTree = "<group>"; };
+		012746231661ED9900850807 /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +94,14 @@
 				0127460A1661ED0D00850807 /* AppDelegate.h */,
 				0127460B1661ED0D00850807 /* AppDelegate.m */,
 				012746021661ED0D00850807 /* Supporting Files */,
+				012746181661ED4200850807 /* SwitchViewController.h */,
+				012746191661ED4200850807 /* SwitchViewController.m */,
+				0127461B1661ED6A00850807 /* FirstViewController.h */,
+				0127461C1661ED6A00850807 /* FirstViewController.m */,
+				0127461E1661ED7600850807 /* SecondViewController.h */,
+				0127461F1661ED7600850807 /* SecondViewController.m */,
+				012746211661ED8F00850807 /* FirstView.xib */,
+				012746231661ED9900850807 /* SecondView.xib */,
 			);
 			path = MultiView2;
 			sourceTree = "<group>";
@@ -154,6 +175,8 @@
 				0127460E1661ED0D00850807 /* Default.png in Resources */,
 				012746101661ED0D00850807 /* Default@2x.png in Resources */,
 				012746121661ED0D00850807 /* Default-568h@2x.png in Resources */,
+				012746221661ED8F00850807 /* FirstView.xib in Resources */,
+				012746241661ED9900850807 /* SecondView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +189,9 @@
 			files = (
 				012746081661ED0D00850807 /* main.m in Sources */,
 				0127460C1661ED0D00850807 /* AppDelegate.m in Sources */,
+				0127461A1661ED4200850807 /* SwitchViewController.m in Sources */,
+				0127461D1661ED6A00850807 /* FirstViewController.m in Sources */,
+				012746201661ED7600850807 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

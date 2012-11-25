@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class SwitchViewController;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain) SwitchViewController *switcher;
 
 @end
