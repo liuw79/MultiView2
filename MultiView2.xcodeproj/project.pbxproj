@@ -21,6 +21,8 @@
 		012746201661ED7600850807 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0127461F1661ED7600850807 /* SecondViewController.m */; };
 		012746221661ED8F00850807 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 012746211661ED8F00850807 /* FirstView.xib */; };
 		012746241661ED9900850807 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 012746231661ED9900850807 /* SecondView.xib */; };
+		0175CE2916663C4A008A3094 /* SwitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0175CE2816663C4A008A3094 /* SwitchView.xib */; };
+		0175CE341666451C008A3094 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0175CE331666451C008A3094 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		0127461F1661ED7600850807 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		012746211661ED8F00850807 /* FirstView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstView.xib; sourceTree = "<group>"; };
 		012746231661ED9900850807 /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
+		0175CE2816663C4A008A3094 /* SwitchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchView.xib; sourceTree = "<group>"; };
+		0175CE331666451C008A3094 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0175CE341666451C008A3094 /* QuartzCore.framework in Frameworks */,
 				012745FC1661ED0D00850807 /* UIKit.framework in Frameworks */,
 				012745FE1661ED0D00850807 /* Foundation.framework in Frameworks */,
 				012746001661ED0D00850807 /* CoreGraphics.framework in Frameworks */,
@@ -64,6 +69,7 @@
 		012745EC1661ED0D00850807 = {
 			isa = PBXGroup;
 			children = (
+				0175CE331666451C008A3094 /* QuartzCore.framework */,
 				012746011661ED0D00850807 /* MultiView2 */,
 				012745FA1661ED0D00850807 /* Frameworks */,
 				012745F81661ED0D00850807 /* Products */,
@@ -102,6 +108,7 @@
 				0127461F1661ED7600850807 /* SecondViewController.m */,
 				012746211661ED8F00850807 /* FirstView.xib */,
 				012746231661ED9900850807 /* SecondView.xib */,
+				0175CE2816663C4A008A3094 /* SwitchView.xib */,
 			);
 			path = MultiView2;
 			sourceTree = "<group>";
@@ -177,6 +184,7 @@
 				012746121661ED0D00850807 /* Default-568h@2x.png in Resources */,
 				012746221661ED8F00850807 /* FirstView.xib in Resources */,
 				012746241661ED9900850807 /* SecondView.xib in Resources */,
+				0175CE2916663C4A008A3094 /* SwitchView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +305,7 @@
 				012746171661ED0D00850807 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

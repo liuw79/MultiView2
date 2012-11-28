@@ -23,7 +23,7 @@
     // Override point for customization after application launch.
     
     //add
-    SwitchViewController *sw = [[SwitchViewController alloc] init];
+    SwitchViewController *sw = [[SwitchViewController alloc] initWithNibName:@"SwitchView" bundle:nil];
 //    self.window.rootViewController = sw;
     self.switcher = sw;
     self.window.rootViewController = self.switcher;

@@ -9,10 +9,13 @@
 #import "SwitchViewController.h"
 #import "FirstViewController.h"
 #import "SecondViewController.h"
+#import "QuartzCore/QuartzCore.h"
 
 @interface SwitchViewController ()
 
 @end
+
+#define kDuration 0.5   // 动画持续时间(秒)
 
 @implementation SwitchViewController
 
@@ -54,29 +57,47 @@
 
 - (void)showFirstView
 {
-    [self removeAllSubViews];
+//    //[self removeAllSubViews];
+//    
+//    NSLog(@"show first view");
+//    if(nil == self.first)
+//    {
+//        FirstViewController *f = [[FirstViewController alloc] initWithNibName:@"FirstView" bundle:nil];
+//        self.first = f;
+//        [f release];
+//        f = nil;
+//    }
+//    
+//    //添加
+//    [UIView beginAnimations:@"change view" context:nil];
+//    [UIView setAnimationDuration:1.0];
+//    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+//    [UIView setAnimationTransition:UIViewAnimationCurveLinear forView:self.view cache:YES];
+//    CGRect rect1 = self.view.frame;
+//    rect1.size.height -= 100;
+//    [self.first.view setFrame:rect1];
+//    [self.view insertSubview:self.first.view atIndex:0];
+//    [UIView commitAnimations];
     
-    NSLog(@"show first view");
-    if(nil == self.first)
-    {
-        FirstViewController *f = [[FirstViewController alloc] initWithNibName:@"FirstView" bundle:nil];
-        self.first = f;
-        [f release];
-        f = nil;
-    }
+    CATransition *animation = [CATransition animation];
+    animation.delegate = self;
+    animation.duration = kDuration;
+    animation.timingFunction = UIViewAnimationCurveEaseInOut;
+    animation.type = kCATransitionPush;
+    animation.subtype = kCATransitionFromLeft;
+    NSUInteger green = [[self.view subviews] indexOfObject:self.first];
+    NSUInteger blue = [[self.view subviews] indexOfObject:self.second];
+    [self.view exchangeSubviewAtIndex:green withSubviewAtIndex:blue];
     
-    //添加
-    [UIView beginAnimations:@"change view" context:nil];
-    [UIView setAnimationDuration:1.0];
-    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.view cache:YES];
-    [self.view insertSubview:self.first.view atIndex:0];
-    [UIView commitAnimations];
+    [[self.first.view layer] addAnimation:animation forKey:@"animation"];
+    
+
+
 }
 
 - (void)showSecondView
 {
-    [self removeAllSubViews];
+    //[self removeAllSubViews];
     
     NSLog(@"show second view");
     if(nil == self.second)
@@ -91,7 +112,7 @@
     [UIView beginAnimations:@"change view" context:nil];
     [UIView setAnimationDuration:1.0];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.view cache:YES];
+    [UIView setAnimationTransition:UIViewAnimationCurveLinear forView:self.view cache:YES];
     [self.view insertSubview:self.second.view atIndex:0];
     [UIView commitAnimations];
 }

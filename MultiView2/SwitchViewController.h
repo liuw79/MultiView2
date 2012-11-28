@@ -16,8 +16,8 @@
 @property (nonatomic, retain) FirstViewController *first;
 @property (nonatomic, retain) SecondViewController *second;
 
-- (void)showFirstView;
-- (void)showSecondView;
+- (IBAction)showFirstView;
+- (IBAction)showSecondView;
 - (void)removeAllSubViews;
 
 @end
